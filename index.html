@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: aqua;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    
+    }
+    .animation{
+        animation-name:  shabaz;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function:  cubic-bezier(0.86, 0.01, 0, 0.97);
+        animation-direction: alternate;
+        animation-fill-mode: backwards;
+    }
+    /* @keyframes shabaz {
+        to{
+                transform: rotate(10deg);
+        }
+        from{
+                transform: rotate(200deg);
+        }
+
+    }
+     */
+     @keyframes shabaz {
+        /* to{
+            }
+            from{
+                transform: rotate(200deg);
+                } */
+                0%{
+                    transform: rotate(10deg);
+                }
+                20%{
+                    transform: rotate(20deg);
+                }
+                40%{
+                    transform: rotate(40deg);
+                }
+                80%{
+                    transform: rotate(80deg);
+                }
+                100%{
+                    transform: rotate(100deg);
+                }
+
+    }
+    
+</style>
+</head>
+<body>
+    <div class="container ">
+        <div class="box animation">
+
+        </div>
+    </div>
+</body>
+</html>
